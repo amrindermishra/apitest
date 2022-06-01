@@ -1,7 +1,7 @@
-from urllib import response
 import requests
-from requests.auth import HTTPBasicAuth
 
-resp =requests.get('https://api.opayl.com/api/class', headers={"Accept":"application/json"})
-# print(resp.json())
-print(resp.text)
+
+# class details 
+resp = requests.get('http://staging-api.opayl.com/class/detail/106',headers={"Accept":"application/json"})
+
+print(resp)
